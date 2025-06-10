@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Data Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA:wght@100..400&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .header-image {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+        }
+
+        .navbar-logo {
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            height: 75px;
+            margin-left: 25px;
+        }
+
+        .logo-container {
+            display: flex;
+        }
+
+        .controler-a {
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            font-size: 21px;
+            font-weight: 200;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin: 0 15px;
+            padding: 0;
+        }
+
+        .controler-container {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin-right: 380px;
+        }
+
+        .sosial {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .sosial-container {
+            display: flex;
+            align-items: center;
+            margin-right: 50px;
+        }
+
+        .sosial-ul {
+            display: inline;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sosial-li {
+            float: left;
+            margin: 0px 6px;
+            height: 30px;
+        }
+
+        .sosial-a {
+            height: 30px;
+            width: 30px;
+        }
+
+        .sosial-img {
+            text-decoration: none;
+            width: 30px;
+        }
+
+        .fiverr-container {
+            margin-left: 20px;
+        }
+        
+        .fiverr {
+            background-color: #0F1220;
+            color: white;
+            padding: 10px 53px;
+            border-radius: 7px;
+            font-size: 26px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        .foreword {
+            position: absolute;
+            top: 32%;
+            left: 17%;
+            z-index: 3;
+            color: white;
+            max-width: 700px;
+        }
+
+        .foreword > h3 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .foreword > h1 {
+            font-size: 29px;
+            font-weight: 500;
+            margin-top: 7px;
+        }
+
+        .foreword > p {
+            font-size: 15px;
+            font-weight: 300;
+            margin-top: 7px;
+            max-width: 550px;
+        }
+
+        /* abaut */
+        .about-container {
+            margin-top: 770px;
+            background-color: #0F1220;
+            color: white;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .abaut-text {
+            max-width: 700px;
+            text-align: center;
+        }
+
+        .abaut-text h3 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .abaut-text h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .abaut-text p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        /* footer */
+
+        footer {
+            margin: 0 auto;
+            background-color: #0F1220;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;  /* center secara horizontal */
+            align-items: center;      /* center secara vertikal */
+            height: 200px;            /* beri tinggi agar bisa dilihat tengahnya */
+            position: relative;
+            background-color: #0F1220; /* opsional, agar terlihat */
+        }
+
+        .footer-line {
+            background-color: #27D56A;
+            height: 4px;
+            border-radius: 5px;
+            width: 98%;
+            margin: 0 auto;
+        }
+
+        .footer-sosial {
+            text-align: center;
+        }
+
+        .footer-sosial-ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-sosial-li {
+            display: inline-block;
+        }
+
+        .footer-sosial-img {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <img src="assets/image/Header.png" alt="" class="header-image">
+    </div>
+    
+    <nav class="navbar-logo">
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="assets/image/Logo.png" alt="" class="logo">
+            </div>
+    
+            <div class="controler-container">
+                <ul>
+                    <li><a href="index.html" class="controler-a">Home</a></li>
+                    <li><a href="about.html" class="controler-a">About</a></li>
+                    <li><a href="projects.html" class="controler-a">Projects</a></li>
+                    <li><a href="profile.html" class="controler-a">Profile</a></li>
+                    <li><a href="contact.html" class="controler-a">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="sosial-container">
+                <div class="sosial">
+                    <ul class="sosial-ul">
+                        <li class="sosial-li"><a href="https://github.com/BigDataStudio-Matriks" class="sosial-a"><img src="assets/image/GithubLogo.png" alt="GithubLogo" class="sosial-img"></a></li>
+                        <li class="sosial-li"><a href="https://www.instagram.com/bds.matriks/" class="sosial-a"><img src="assets/image/InstagramLogo.png" alt="InstagramLogo" class="sosial-img"></a></li>
+                        <li class="sosial-li"><a href="" class="sosial-a"><img src="assets/image/WhatsappLogo.png" alt="WhatsappLogo" class="sosial-img"></a></li>
+                    </ul>
+                </div>
+    
+                <div class="fiverr-container">
+                    <a href="https://www.fiverr.com/bigdatastudio" class="fiverr">fiverr</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="foreword">
+        <h3>HELLO, WELCOME TO BDS</H3>
+        <h1>Web & Mobile App Development Team</h1>
+        <p>At Big Data Studio,We Specialize in crafting clean,reasponsive Website and Powerful mobile apps with a focus on performance,usability,and elegant desing</p>
+    </div>
+
+    <div class="about-container">
+        <div class="abaut">
+            <img src="" alt="">
+    
+            <div class="abaut-text">
+                <h3>Big Data Studio</H3>
+                <h1>Improve Skill and Make Money</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quod amet explicabo atque illum inventore temporibus accusantium a enim consequuntur at blanditiis vel deleniti soluta, officiis, voluptas, nulla sunt exercitationem?</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-line"></div>
+
+        <div class="footer">
+            <div class="footer-sosial">
+                <ul class="footer-sosial-ul">
+                    <li class="footer-sosial-li"><a href="https://github.com/BigDataStudio-Matriks" class="sosial-a"><img src="assets/image/GithubLogoF.png" alt="GithubLogo" class="footer-sosial-img"></a></li>
+                    <li class="footer-sosial-li"><a href="https://www.instagram.com/bds.matriks/" class="sosial-a"><img src="assets/image/InstagramLogoF.png" alt="InstagramLogo" class="footer-sosial-img"></a></li>
+                    <li class="footer-sosial-li"><a href="" class="sosial-a"><img src="assets/image/WhatsappLogoF.png" alt="WhatsappLogo" class="footer-sosial-img"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
